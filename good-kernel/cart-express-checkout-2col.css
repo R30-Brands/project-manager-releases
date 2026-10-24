@@ -1,0 +1,18 @@
+/* Cart: express checkout buttons in two columns (untested against the theme) */
+shopify-accelerated-checkout-cart {
+  --shopify-accelerated-checkout-button-block-size: 48px;
+  --shopify-accelerated-checkout-row-gap: 8px;
+}
+
+shopify-accelerated-checkout-cart .wallet-cart-grid,
+.additional-checkout-buttons [data-shopify-buttoncontainer] {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+shopify-accelerated-checkout-cart .wallet-cart-grid > *,
+.additional-checkout-buttons [data-shopify-buttoncontainer] > * {
+  width: 100% !important;
+  margin: 0 !important;
+}
